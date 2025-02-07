@@ -1,0 +1,1 @@
+[How to Set Up ArgoCD for Production? (EKS - ECR - Helm - App of Apps - Image Updater - GitOps)](https://www.youtube.com/watch?v=_G_RY5trQao&list=PLiMWaCMwGJXkktZoHhmL6sbg7ELNjv9Xw&index=5&ab_channel=AntonPutra)

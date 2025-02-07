@@ -1,0 +1,6 @@
+---
+# Disable HTTPS; most of the time, it's exposed onlu internally,
+# and if needed, it can be secured with TLS using Ingress.
+configs:
+  params:
+    server.insecure: true
