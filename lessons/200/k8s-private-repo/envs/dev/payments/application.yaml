@@ -16,14 +16,20 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: ssh://git@github.com/DITVTVTVT/lession-159.git
+    repoURL: ssh://git@github.com:DITVTVTVT/k8s.git
     targetRevision: main
-    path: my-app-chart
+    path: helm-charts/payments
     helm:
       parameters:
         - name: "replicaCount"
           value: "2"
         - name: "image.repository"
-          value: ditvtvtvt/nginx-lession159
+          value: "ditvtvtvt/payments"
         - name: "image.tag"
-          value: v0.1.0
+          value: "0.1.0"
+        - name: "service.port"
+          value: "8080"
+        - name: "livenessProbe.httpGet.path"
+          value: "/healthz"
+        - name: "readinessProbe.httpGet.path"
+          value: "/healthz"
